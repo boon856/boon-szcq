@@ -1,0 +1,96 @@
+
+<!-- saved from url=(0244)http://localhost:63342/%E5%8D%83%E6%96%B9%E5%9B%9E%E6%AC%BE%E6%AF%8F%E6%97%A5%E6%9B%B4%E6%96%B0.py/%E7%BD%91%E9%A1%B5%E5%AF%BC%E8%88%AA/%E9%A6%96%E9%80%89%E6%90%9C%E7%B4%A2%E6%A1%86.html?_ijt=tdumag3en5tje143n11po6ke9d&_ij_reload=RELOAD_ON_SAVE -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><table cellspacing="0" width="746" border="1" bordercolorlight="#339966" bordercolordark="#FFFFFF" id="table937">
+  <tbody>
+  <tr>
+    <td align="middle">
+    
+
+	
+
+<script language="javascript">
+function index_search(){
+var v=f.k.value
+if(f.o[0].checked==true)
+window.open("http://www.google.com/search?hl=zh-CN&q="+v);
+if(f.o[1].checked==true)
+window.open("http://www.baidu.com/s?wd="+v);
+if(f.o[2].checked==true)
+window.open("https://cn.bing.com/search?q="+v);
+if(f.o[3].checked==true)
+window.open("https://www.so.com/s?ie=utf-8&fr=none&src=360sou_newhome&ssid=&q="+v);
+if(f.o[4].checked==true)
+window.open("http://www.sogou.com/web?query="+v);
+if(f.o[5].checked==true)
+window.open("https://s.weibo.com/weibo/"+v);
+if(f.o[6].checked==true)
+window.open("https://www.youdao.com/result?word="+v);
+if(f.o[7].checked==true)
+window.open("https://search.sohu.com/?queryType=outside&keyword="+v);
+return false;}
+//-->
+</script>
+
+<meta content="MSHTML 5.00.3700.6699" name="GENERATOR">
+<center>
+<div align="center">
+<table id="table938" border="0" cellspacing="0" cellpadding="0" width="671">
+  <tbody>
+  <form name="f" onsubmit="return(index_search())"></form>
+  <tr>
+    <td nowrap=""> <font color="#FF0000"><a target="_blank" href="http://www.baidu.com/">苏州驰骎</a></font>
+	<input class="input_box" maxlength="64" size="19" value="" name="k"> <input type="submit" value="搜一下" name="submit"> <font color="#008000">
+	<input type="radio" value="0" name="o">  Google
+	<input type="radio" value="2" name="o" checked=""> 百度
+      <input type="radio" value="3" name="o"> 必应 <input type="radio" value="4" name="o"> 360搜搜
+      <input type="radio" value="58" name="o"> 搜狗
+
+    <input type="radio" value="59" name="o"> 新浪
+<input type="radio" value="510" name="o"> 网易
+
+  <input type="radio" value="511" name="o"> 搜狐
+
+	</font></td></tr>
+	
+	</tbody></table>
+
+      </div>
+</center></td></tr></tbody></table>
+
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host + 
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash 
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' + 
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script></body></html>
